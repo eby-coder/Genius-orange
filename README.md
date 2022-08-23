@@ -29,7 +29,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/eby-coder/Genius-orange.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live-Site URL](https://eby-coder.github.io/Genius-orange/)
 
 ## My process
 
