@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+--dark-cyan: hsl(185, 75%, 39%);
+--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--dark-grayish-blue: hsl(227, 10%, 46%);
+--dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg),
+                      url(./images/bg-pattern-bottom.svg);
+    background-position: 190% -60%, -60% 20%;
+    background-repeat: no-repeat;
+}
+
+.entire-page {
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.entire-page img {
+    border: 5px white solid;
+    border-radius: 100%;
+    margin-top: 85px;
+    margin-bottom: 20px;
+}
+
+.victor {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 10px;
+}
+.victor::after {
+    content: '26';
+    color: var(--dark-gray);
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+.london {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 30px;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border-top: 1px var(--dark-gray) solid;
+    padding: 30px 0 20px;
+    box-sizing: border-box;
+}
+.block h1 {
+    font-size: 20px;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 5px;
+}
+.block p {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+@media (max-width:375px) {
+    body {
+        background-color: var(--dark-cyan);
+        background-image: url(./images/bg-pattern-top.svg),
+                          url(./images/bg-pattern-bottom.svg);
+        background-position: 130% 110%, -30% -25%;
+        background-repeat: no-repeat;
+    }
+
+    .entire-page{
+        width: 300px;
+        margin: 100px auto 0;
+    }
+}
+
+.attribution {font-size: 11px; text-align: center;}
+.attribution a {color: hsl(228, 45%, 44%);}
+.attribution a:hover {color: red; text-decoration: none;}
